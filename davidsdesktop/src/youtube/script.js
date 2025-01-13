@@ -1,5 +1,5 @@
 // script.js
-const apiKey = 'AIzaSyDN7Bkifyt9XfHPjKmbzRiH2vmq1a7fi6E'; // הכנס את ה-API Key שלך כאן
+const apiKey = 'something';
 const searchButton = document.getElementById('searchButton');
 const searchModal = document.getElementById('searchModal');
 const closeModal = document.querySelector('.close');
