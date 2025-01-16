@@ -5,7 +5,7 @@ export const cs = import.meta.env.VITE_API_CLIENT_KEY;
 // get access token
 export async function getAccessToken() {
     try {
-        const response = await fetch('https://accounts.spotify.com/api/token', {
+        let response = await fetch('https://accounts.spotify.com/api/token', {
             method: 'POST',
             headers: {
                 'Authorization': 'Basic ' + btoa(ci + ':' + cs),
@@ -30,7 +30,7 @@ export async function searchSpotify(query) {
     const token = await getAccessToken();
     const url = `https://api.spotify.com/v1/search?q=${encodeURIComponent(query)}&type=track&limit=10`;
 
-    const response = await fetch(url, {
+    let response = await fetch(url, {
         method: 'GET',
         headers: {
             'Authorization': `Bearer ${token}`,

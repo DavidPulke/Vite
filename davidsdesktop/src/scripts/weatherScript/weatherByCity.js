@@ -1,5 +1,5 @@
-const API_KEY = "5defafb80b58284890d278857a0815d8";
-const WEATHER_URL = `https://api.openweathermap.org/data/2.5/weather?appid=${API_KEY}&units=metric&lang=he&q=`; // הוספת ?lang=he לתמיכה בתיאור בעברית
+const AK = "5defafb80b58284890d278857a0815d8";
+const WEATHER_URL = `https://api.openweathermap.org/data/2.5/weather?appid=${AK}&units=metric&lang=he&q=`;
 let weatherInfo = document.querySelector('.weather-info')
 
 

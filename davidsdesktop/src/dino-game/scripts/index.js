@@ -20,9 +20,9 @@ const GROUND_HEIGHT = 24;
 const GROUND_AND_CACTUS_SPEED = 0.5;
 
 const CACTI_CONFIG = [
-  { width: 48 / 1.5, height: 100 / 1.5, image: "src/dino-game/images/cactus_1.png" },
-  { width: 98 / 1.5, height: 100 / 1.5, image: "src/dino-game/images/cactus_2.png" },
-  { width: 68 / 1.5, height: 75 / 1.5, image: "src/dino-game/images/cactus_3.png" },
+  { width: 48 / 1.5, height: 100 / 1.5, image: "dinoImages/cactus_1.png" },
+  { width: 98 / 1.5, height: 100 / 1.5, image: "dinoImages/cactus_2.png" },
+  { width: 68 / 1.5, height: 75 / 1.5, image: "dinoImages/cactus_3.png" },
 ];
 
 //Game Objects

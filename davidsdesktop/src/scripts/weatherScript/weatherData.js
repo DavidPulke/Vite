@@ -4,8 +4,8 @@ const WEATHER_URL = `https://api.openweathermap.org/data/2.5/weather?appid=${API
 // קבלת מיקום על בסיס IP
 export default async function getLocationByIP() {
     try {
-        const response = await fetch('https://ipinfo.io/json?token=a723988d90a66d');
-        const data = await response.json();
+        let response = await fetch('https://ipinfo.io/json?token=a723988d90a66d');
+        let data = await response.json();
         const [lat, lon] = data.loc.split(",");
         getWeatherByLocation(lat, lon); // שליחת המיקום ל-API של מזג האוויר
     } catch (error) {
@@ -16,8 +16,8 @@ export default async function getLocationByIP() {
 // קבלת מזג אוויר לפי קווי רוחב ואורך
 async function getWeatherByLocation(lat, lon) {
     try {
-        const response = await fetch(`${WEATHER_URL}lat=${lat}&lon=${lon}`);
-        const data = await response.json();
+        let response = await fetch(`${WEATHER_URL}lat=${lat}&lon=${lon}`);
+        let data = await response.json();
         showWeatherData(data); // קריאה לפונקציה שתציג את הנתונים בפוטר
     } catch (error) {
         alert("שגיאה בקבלת המידע ממזג האוויר: " + error.message);

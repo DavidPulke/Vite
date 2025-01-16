@@ -168,7 +168,7 @@ function generateFolderContent(folderName) {
                 document.querySelector('.trexBtn').addEventListener('click', startTrexGame)
             }
         }, 0);
-        content += `<button class="trexBtn"><img class='dinoImg' src="src/dino-game/images/standing_still.png"></button>
+        content += `<button class="trexBtn"><img class='dinoImg' src="dinoImages/standing_still.png"></button>
     <div class="t-rex-game">
         <canvas class="trexCanvas"></canvas>
     </div>`
